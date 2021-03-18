@@ -17,6 +17,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ToastrModule.forRoot(),
     ModalModule.forRoot(),
     BrowserAnimationsModule
