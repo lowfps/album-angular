@@ -33,13 +33,13 @@ export class ContentComponent implements OnInit {
     this.modalContenido = '';
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   public seleccionar(tmpFoto: Foto): void {
     this.fotoSeleccionada = tmpFoto;
   }
   public cancelar(): void {
-    this.fotoSeleccionada= new Foto(0, '', '', '');
+    this.fotoSeleccionada = new Foto(0, '', '', '');
   }
 
   public cancelarEliminar(): void {
@@ -52,7 +52,7 @@ export class ContentComponent implements OnInit {
   }
 
   public grabarRegistro(): boolean {
-    if (this.fotoSeleccionada.descripcion === '') {
+    if (this.fotoSeleccionada.descripcion === '' || this.fotoSeleccionada.foto == '') {
       const parametros = {
         closeButton: true,
         enableHtml: true,
